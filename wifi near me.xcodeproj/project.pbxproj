@@ -13,6 +13,10 @@
 		46524AE01CA213FD003C7FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46524ADF1CA213FD003C7FFC /* Assets.xcassets */; };
 		46524AE31CA213FD003C7FFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46524AE11CA213FD003C7FFC /* LaunchScreen.storyboard */; };
 		46524AEB1CA215A4003C7FFC /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46524AEA1CA215A4003C7FFC /* Location.swift */; };
+		46524B051CA2185A003C7FFC /* Library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B011CA2185A003C7FFC /* Library.framework */; };
+		46524B061CA2185A003C7FFC /* QuadratTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B021CA2185A003C7FFC /* QuadratTouch.framework */; };
+		46524B071CA2185A003C7FFC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B031CA2185A003C7FFC /* RxCocoa.framework */; };
+		46524B081CA2185A003C7FFC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B041CA2185A003C7FFC /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		46524AE21CA213FD003C7FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46524AE41CA213FD003C7FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46524AEA1CA215A4003C7FFC /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		46524B011CA2185A003C7FFC /* Library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Library.framework; path = Carthage/Build/iOS/Library.framework; sourceTree = "<group>"; };
+		46524B021CA2185A003C7FFC /* QuadratTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuadratTouch.framework; path = Carthage/Build/iOS/QuadratTouch.framework; sourceTree = "<group>"; };
+		46524B031CA2185A003C7FFC /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		46524B041CA2185A003C7FFC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46524B081CA2185A003C7FFC /* RxSwift.framework in Frameworks */,
+				46524B071CA2185A003C7FFC /* RxCocoa.framework in Frameworks */,
+				46524B051CA2185A003C7FFC /* Library.framework in Frameworks */,
+				46524B061CA2185A003C7FFC /* QuadratTouch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				46524AD71CA213FD003C7FFC /* wifi near me */,
+				46524AED1CA21683003C7FFC /* Frameworks */,
 				46524AD61CA213FD003C7FFC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +80,17 @@
 			path = "wifi near me";
 			sourceTree = "<group>";
 		};
+		46524AED1CA21683003C7FFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46524B011CA2185A003C7FFC /* Library.framework */,
+				46524B021CA2185A003C7FFC /* QuadratTouch.framework */,
+				46524B031CA2185A003C7FFC /* RxCocoa.framework */,
+				46524B041CA2185A003C7FFC /* RxSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +101,7 @@
 				46524AD11CA213FD003C7FFC /* Sources */,
 				46524AD21CA213FD003C7FFC /* Frameworks */,
 				46524AD31CA213FD003C7FFC /* Resources */,
+				46524AEC1CA2163B003C7FFC /* Carthage copy-frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,6 +124,11 @@
 				TargetAttributes = {
 					46524AD41CA213FD003C7FFC = {
 						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -132,6 +162,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46524AEC1CA2163B003C7FFC /* Carthage copy-frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Library.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/QuadratTouch.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			name = "Carthage copy-frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		46524AD11CA213FD003C7FFC /* Sources */ = {
@@ -255,6 +306,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "wifi near me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tfw.wifi-near-me";
@@ -266,6 +321,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "wifi near me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tfw.wifi-near-me";
