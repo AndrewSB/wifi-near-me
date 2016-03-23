@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		46524AD91CA213FD003C7FFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46524AD81CA213FD003C7FFC /* AppDelegate.swift */; };
-		46524ADB1CA213FD003C7FFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46524ADA1CA213FD003C7FFC /* ViewController.swift */; };
 		46524ADE1CA213FD003C7FFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46524ADC1CA213FD003C7FFC /* Main.storyboard */; };
 		46524AE01CA213FD003C7FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46524ADF1CA213FD003C7FFC /* Assets.xcassets */; };
 		46524AE31CA213FD003C7FFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46524AE11CA213FD003C7FFC /* LaunchScreen.storyboard */; };
@@ -19,12 +18,15 @@
 		46524B081CA2185A003C7FFC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B041CA2185A003C7FFC /* RxSwift.framework */; };
 		46524B121CA21A28003C7FFC /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B101CA21A28003C7FFC /* Crashlytics.framework */; };
 		46524B131CA21A28003C7FFC /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B111CA21A28003C7FFC /* Fabric.framework */; };
+		46524B171CA21AA0003C7FFC /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46524B161CA21AA0003C7FFC /* Storyboards.swift */; };
+		46524B191CA21DE0003C7FFC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46524B181CA21DE0003C7FFC /* OnboardingViewController.swift */; };
+		46524B1B1CA21DEB003C7FFC /* AuthorizedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46524B1A1CA21DEB003C7FFC /* AuthorizedViewController.swift */; };
+		46524B1D1CA21DF6003C7FFC /* DeniedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46524B1C1CA21DF6003C7FFC /* DeniedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		46524AD51CA213FD003C7FFC /* wifi near me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wifi near me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46524AD81CA213FD003C7FFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46524ADA1CA213FD003C7FFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		46524ADD1CA213FD003C7FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46524ADF1CA213FD003C7FFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46524AE21CA213FD003C7FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +38,10 @@
 		46524B041CA2185A003C7FFC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		46524B101CA21A28003C7FFC /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Frameworks/Crashlytics.framework; sourceTree = "<group>"; };
 		46524B111CA21A28003C7FFC /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Frameworks/Fabric.framework; sourceTree = "<group>"; };
+		46524B161CA21AA0003C7FFC /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		46524B181CA21DE0003C7FFC /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		46524B1A1CA21DEB003C7FFC /* AuthorizedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizedViewController.swift; sourceTree = "<group>"; };
+		46524B1C1CA21DF6003C7FFC /* DeniedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeniedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +82,9 @@
 			isa = PBXGroup;
 			children = (
 				46524AD81CA213FD003C7FFC /* AppDelegate.swift */,
-				46524ADA1CA213FD003C7FFC /* ViewController.swift */,
+				46524B181CA21DE0003C7FFC /* OnboardingViewController.swift */,
+				46524B1A1CA21DEB003C7FFC /* AuthorizedViewController.swift */,
+				46524B1C1CA21DF6003C7FFC /* DeniedViewController.swift */,
 				46524AEA1CA215A4003C7FFC /* Location.swift */,
 				46524ADC1CA213FD003C7FFC /* Main.storyboard */,
 				46524B0F1CA219EE003C7FFC /* Supporting Files */,
@@ -100,11 +108,28 @@
 		46524B0F1CA219EE003C7FFC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				46524B141CA21AA0003C7FFC /* Constants */,
 				46524ADF1CA213FD003C7FFC /* Assets.xcassets */,
 				46524AE11CA213FD003C7FFC /* LaunchScreen.storyboard */,
 				46524AE41CA213FD003C7FFC /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		46524B141CA21AA0003C7FFC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				46524B151CA21AA0003C7FFC /* Build */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		46524B151CA21AA0003C7FFC /* Build */ = {
+			isa = PBXGroup;
+			children = (
+				46524B161CA21AA0003C7FFC /* Storyboards.swift */,
+			);
+			path = Build;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,9 +260,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46524ADB1CA213FD003C7FFC /* ViewController.swift in Sources */,
+				46524B171CA21AA0003C7FFC /* Storyboards.swift in Sources */,
+				46524B1B1CA21DEB003C7FFC /* AuthorizedViewController.swift in Sources */,
 				46524AEB1CA215A4003C7FFC /* Location.swift in Sources */,
+				46524B1D1CA21DF6003C7FFC /* DeniedViewController.swift in Sources */,
 				46524AD91CA213FD003C7FFC /* AppDelegate.swift in Sources */,
+				46524B191CA21DE0003C7FFC /* OnboardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +278,7 @@
 				46524ADD1CA213FD003C7FFC /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		46524AE11CA213FD003C7FFC /* LaunchScreen.storyboard */ = {
@@ -258,6 +287,7 @@
 				46524AE21CA213FD003C7FFC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -358,7 +388,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
 				);
-				INFOPLIST_FILE = "wifi near me/Info.plist";
+				INFOPLIST_FILE = "wifi near me/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tfw.wifi-near-me";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -375,7 +405,7 @@
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/Frameworks",
 				);
-				INFOPLIST_FILE = "wifi near me/Info.plist";
+				INFOPLIST_FILE = "wifi near me/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "tfw.wifi-near-me";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -401,6 +431,7 @@
 				46524AE91CA213FD003C7FFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

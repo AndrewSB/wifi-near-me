@@ -17,13 +17,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    let location = Location()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-
+        
         Fabric.with([Crashlytics.self])
         
+        var initialViewController: Locationable
+        
+        switch location.authorizationStatus {
+        case .AuthorizedAlways, .AuthorizedWhenInUse:
+            initialViewController = StoryboardScene.Main.instantiateAuthorized()
+        case .Denied:
+            initialViewController = StoryboardScene.Main.instantiateDenied()
+        case .NotDetermined, .Restricted:
+            initialViewController = StoryboardScene.Main.instantiateOnboarding()
+        }
+        
+        initialViewController.location = self.location
+
+        
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window!.rootViewController = ViewController()
+        window!.rootViewController = initialViewController as? UIViewController
+        window!.makeKeyAndVisible()
         
         return true
     }
