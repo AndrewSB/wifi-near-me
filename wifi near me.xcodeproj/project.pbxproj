@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46524AD91CA213FD003C7FFC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46524AD81CA213FD003C7FFC /* AppDelegate.swift */; };
+		46524ADB1CA213FD003C7FFC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46524ADA1CA213FD003C7FFC /* ViewController.swift */; };
+		46524ADE1CA213FD003C7FFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46524ADC1CA213FD003C7FFC /* Main.storyboard */; };
+		46524AE01CA213FD003C7FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46524ADF1CA213FD003C7FFC /* Assets.xcassets */; };
+		46524AE31CA213FD003C7FFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46524AE11CA213FD003C7FFC /* LaunchScreen.storyboard */; };
+		46524AEB1CA215A4003C7FFC /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46524AEA1CA215A4003C7FFC /* Location.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46524AD51CA213FD003C7FFC /* wifi near me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wifi near me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		46524AD81CA213FD003C7FFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		46524ADA1CA213FD003C7FFC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		46524ADD1CA213FD003C7FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		46524ADF1CA213FD003C7FFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46524AE21CA213FD003C7FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46524AE41CA213FD003C7FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46524AEA1CA215A4003C7FFC /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46524AD21CA213FD003C7FFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46524ACC1CA213FD003C7FFC = {
+			isa = PBXGroup;
+			children = (
+				46524AD71CA213FD003C7FFC /* wifi near me */,
+				46524AD61CA213FD003C7FFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46524AD61CA213FD003C7FFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46524AD51CA213FD003C7FFC /* wifi near me.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46524AD71CA213FD003C7FFC /* wifi near me */ = {
+			isa = PBXGroup;
+			children = (
+				46524AD81CA213FD003C7FFC /* AppDelegate.swift */,
+				46524ADA1CA213FD003C7FFC /* ViewController.swift */,
+				46524AEA1CA215A4003C7FFC /* Location.swift */,
+				46524ADC1CA213FD003C7FFC /* Main.storyboard */,
+				46524ADF1CA213FD003C7FFC /* Assets.xcassets */,
+				46524AE11CA213FD003C7FFC /* LaunchScreen.storyboard */,
+				46524AE41CA213FD003C7FFC /* Info.plist */,
+			);
+			path = "wifi near me";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46524AD41CA213FD003C7FFC /* wifi near me */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46524AE71CA213FD003C7FFC /* Build configuration list for PBXNativeTarget "wifi near me" */;
+			buildPhases = (
+				46524AD11CA213FD003C7FFC /* Sources */,
+				46524AD21CA213FD003C7FFC /* Frameworks */,
+				46524AD31CA213FD003C7FFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wifi near me";
+			productName = "wifi near me";
+			productReference = 46524AD51CA213FD003C7FFC /* wifi near me.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46524ACD1CA213FD003C7FFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Andrew Breckenridge";
+				TargetAttributes = {
+					46524AD41CA213FD003C7FFC = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 46524AD01CA213FD003C7FFC /* Build configuration list for PBXProject "wifi near me" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46524ACC1CA213FD003C7FFC;
+			productRefGroup = 46524AD61CA213FD003C7FFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46524AD41CA213FD003C7FFC /* wifi near me */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46524AD31CA213FD003C7FFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46524AE31CA213FD003C7FFC /* LaunchScreen.storyboard in Resources */,
+				46524AE01CA213FD003C7FFC /* Assets.xcassets in Resources */,
+				46524ADE1CA213FD003C7FFC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46524AD11CA213FD003C7FFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46524ADB1CA213FD003C7FFC /* ViewController.swift in Sources */,
+				46524AEB1CA215A4003C7FFC /* Location.swift in Sources */,
+				46524AD91CA213FD003C7FFC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		46524ADC1CA213FD003C7FFC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46524ADD1CA213FD003C7FFC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		46524AE11CA213FD003C7FFC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				46524AE21CA213FD003C7FFC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		46524AE51CA213FD003C7FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46524AE61CA213FD003C7FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46524AE81CA213FD003C7FFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "wifi near me/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tfw.wifi-near-me";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		46524AE91CA213FD003C7FFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "wifi near me/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "tfw.wifi-near-me";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46524AD01CA213FD003C7FFC /* Build configuration list for PBXProject "wifi near me" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46524AE51CA213FD003C7FFC /* Debug */,
+				46524AE61CA213FD003C7FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46524AE71CA213FD003C7FFC /* Build configuration list for PBXNativeTarget "wifi near me" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46524AE81CA213FD003C7FFC /* Debug */,
+				46524AE91CA213FD003C7FFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46524ACD1CA213FD003C7FFC /* Project object */;
+}
