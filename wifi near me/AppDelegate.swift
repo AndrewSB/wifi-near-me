@@ -23,22 +23,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Fabric.with([Crashlytics.self])
         
-        var initialViewController: Locationable
-        
-        switch location.authorizationStatus {
-        case .AuthorizedAlways, .AuthorizedWhenInUse:
-            initialViewController = StoryboardScene.Main.instantiateAuthorized()
-        case .Denied:
-            initialViewController = StoryboardScene.Main.instantiateDenied()
-        case .NotDetermined, .Restricted:
-            initialViewController = StoryboardScene.Main.instantiateOnboarding()
-        }
-        
-        initialViewController.location = self.location
-
+        let initialViewController = Route.routeFromLocation.locationEmbeddedVC(self.location)
         
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        window!.rootViewController = initialViewController as? UIViewController
+        window!.rootViewController = initialViewController
         window!.makeKeyAndVisible()
         
         return true

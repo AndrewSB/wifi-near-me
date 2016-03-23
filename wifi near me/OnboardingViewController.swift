@@ -15,6 +15,8 @@ import PermissionScope
 import CoreLocation
 
 class OnboardingViewController: UIViewController, Locationable {
+    
+    @IBOutlet weak var bigTextLabel: UILabel!
 
     var location: Location!
     
@@ -36,19 +38,24 @@ class OnboardingViewController: UIViewController, Locationable {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        delay(2, closure: showPermissionScope)
+    }
 
-        delay(0.2) {
-            self.pscope.show({ (finished, results) in
-                if finished {
-                    print("gucci")
-                    print(results)
-                }
-            }, cancelled: { (results) in
-                print("!gucci")
-                print( results)
-            })
+}
+
+extension OnboardingViewController {
+
+    func showPermissionScope() {
+        
+        self.pscope.show { _ in
+            
         }
+    }
     
+    func handlePermissionResult(authChange: authClosureType?, cancelled: cancelClosureType?) {
+        
+        
+        
     }
 
 }

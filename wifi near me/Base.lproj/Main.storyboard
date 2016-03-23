@@ -32,10 +32,15 @@
                             <constraint firstItem="zmB-y1-86T" firstAttribute="top" secondItem="Pjk-1e-j24" secondAttribute="bottom" constant="22" id="es1-0E-YqC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bigTextLabel" destination="zmB-y1-86T" id="a06-Hn-cvk"/>
+                        <segue destination="VSe-0Q-NKz" kind="presentation" identifier="toAuthorized" id="WGz-Ns-FTe"/>
+                        <segue destination="Ttr-Kr-lVK" kind="presentation" identifier="toDenied" id="CzT-S6-E3U"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oc5-sd-Wc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="304" y="-1401"/>
+            <point key="canvasLocation" x="-784" y="-177"/>
         </scene>
         <!--Authorized View Controller-->
         <scene sceneID="OE6-Dq-8Gj">
