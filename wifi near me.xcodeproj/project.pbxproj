@@ -17,6 +17,8 @@
 		46524B061CA2185A003C7FFC /* QuadratTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B021CA2185A003C7FFC /* QuadratTouch.framework */; };
 		46524B071CA2185A003C7FFC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B031CA2185A003C7FFC /* RxCocoa.framework */; };
 		46524B081CA2185A003C7FFC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B041CA2185A003C7FFC /* RxSwift.framework */; };
+		46524B121CA21A28003C7FFC /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B101CA21A28003C7FFC /* Crashlytics.framework */; };
+		46524B131CA21A28003C7FFC /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B111CA21A28003C7FFC /* Fabric.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		46524B021CA2185A003C7FFC /* QuadratTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuadratTouch.framework; path = Carthage/Build/iOS/QuadratTouch.framework; sourceTree = "<group>"; };
 		46524B031CA2185A003C7FFC /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		46524B041CA2185A003C7FFC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		46524B101CA21A28003C7FFC /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Frameworks/Crashlytics.framework; sourceTree = "<group>"; };
+		46524B111CA21A28003C7FFC /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Frameworks/Fabric.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,9 +44,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				46524B081CA2185A003C7FFC /* RxSwift.framework in Frameworks */,
+				46524B121CA21A28003C7FFC /* Crashlytics.framework in Frameworks */,
 				46524B071CA2185A003C7FFC /* RxCocoa.framework in Frameworks */,
 				46524B051CA2185A003C7FFC /* Library.framework in Frameworks */,
 				46524B061CA2185A003C7FFC /* QuadratTouch.framework in Frameworks */,
+				46524B131CA21A28003C7FFC /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,9 +79,7 @@
 				46524ADA1CA213FD003C7FFC /* ViewController.swift */,
 				46524AEA1CA215A4003C7FFC /* Location.swift */,
 				46524ADC1CA213FD003C7FFC /* Main.storyboard */,
-				46524ADF1CA213FD003C7FFC /* Assets.xcassets */,
-				46524AE11CA213FD003C7FFC /* LaunchScreen.storyboard */,
-				46524AE41CA213FD003C7FFC /* Info.plist */,
+				46524B0F1CA219EE003C7FFC /* Supporting Files */,
 			);
 			path = "wifi near me";
 			sourceTree = "<group>";
@@ -83,12 +87,24 @@
 		46524AED1CA21683003C7FFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				46524B101CA21A28003C7FFC /* Crashlytics.framework */,
+				46524B111CA21A28003C7FFC /* Fabric.framework */,
 				46524B011CA2185A003C7FFC /* Library.framework */,
 				46524B021CA2185A003C7FFC /* QuadratTouch.framework */,
 				46524B031CA2185A003C7FFC /* RxCocoa.framework */,
 				46524B041CA2185A003C7FFC /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46524B0F1CA219EE003C7FFC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				46524ADF1CA213FD003C7FFC /* Assets.xcassets */,
+				46524AE11CA213FD003C7FFC /* LaunchScreen.storyboard */,
+				46524AE41CA213FD003C7FFC /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,10 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46524AE71CA213FD003C7FFC /* Build configuration list for PBXNativeTarget "wifi near me" */;
 			buildPhases = (
+				46524B0E1CA219B0003C7FFC /* SwiftGen */,
 				46524AD11CA213FD003C7FFC /* Sources */,
 				46524AD21CA213FD003C7FFC /* Frameworks */,
 				46524AD31CA213FD003C7FFC /* Resources */,
 				46524AEC1CA2163B003C7FFC /* Carthage copy-frameworks */,
+				46524B091CA218C6003C7FFC /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -181,6 +199,34 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		46524B091CA218C6003C7FFC /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Frameworks/Fabric.framework/run cf31bd871fb35d3e3e94b3732cd654bbde1f5b0c 33804315ff66b7966281403539d1d005fcf98139ee03282942a67832a10b0f8e";
+		};
+		46524B0E1CA219B0003C7FFC /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "DOT_DIR=\"${PROJECT_DIR}/${PROJECT_NAME}\"\nCONST_DIR=\"$DOT_DIR\"\"/Supporting Files/Constants\"\n\nif which /usr/local/bin/swiftgen > /dev/null; then\n    /usr/local/bin/swiftgen storyboards \"$DOT_DIR\" --output \"$CONST_DIR\"\"/Build/Storyboards.swift\"\nelse\n    echo \"BUILD ERROR: You need to brew install swiftgen\"\n    exit 1\nfi";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -309,6 +355,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "wifi near me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -324,6 +372,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
 				);
 				INFOPLIST_FILE = "wifi near me/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
