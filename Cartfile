@@ -2,3 +2,5 @@ github "AndrewSB/Library" "HEAD"
 github "ReactiveX/RxSwift"
 
 github "Constantine-Fry/das-quadrat" "master"
+
+github "nickoneill/PermissionScope" ~> 1.0

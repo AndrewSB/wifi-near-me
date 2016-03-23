@@ -8,30 +8,47 @@
 
 import UIKit
 
+import Library
+
+import PermissionScope
+
+import CoreLocation
+
 class OnboardingViewController: UIViewController, Locationable {
 
     var location: Location!
     
+    let pscope: PermissionScope = {
+        let infoPlist = NSBundle.mainBundle().infoDictionary!
+        
+        let permissions: [(Permission, String)] = [
+//            (LocationWhileInUsePermission(), infoPlist["NSLocationWhenInUseUsageDescription"] as! String),
+            (LocationAlwaysPermission(), infoPlist["NSLocationAlwaysUsageDescription"] as! String),
+            (NotificationsPermission(), "We use this to alert you when we find a nearby network")
+        ]
+        
+        let ps = PermissionScope()
+        permissions.forEach(ps.addPermission)
+        
+        return ps
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+        delay(0.2) {
+            self.pscope.show({ (finished, results) in
+                if finished {
+                    print("gucci")
+                    print(results)
+                }
+            }, cancelled: { (results) in
+                print("!gucci")
+                print( results)
+            })
+        }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
     }
-    */
 
 }
