@@ -1,6 +1,6 @@
 github "AndrewSB/Library" "HEAD"
-github "ReactiveX/RxSwift"
+github "ReactiveX/RxSwift" "3.0.0-beta.1"
 
-github "Constantine-Fry/das-quadrat" "master"
+github "Constantine-Fry/das-quadrat" "develop"
 
-github "nickoneill/PermissionScope" ~> 1.0
+github "sunshinejr/RxPermission" "master"
