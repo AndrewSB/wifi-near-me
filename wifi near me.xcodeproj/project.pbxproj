@@ -12,13 +12,11 @@
 		46524AE01CA213FD003C7FFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46524ADF1CA213FD003C7FFC /* Assets.xcassets */; };
 		46524AE31CA213FD003C7FFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46524AE11CA213FD003C7FFC /* LaunchScreen.storyboard */; };
 		46524B051CA2185A003C7FFC /* Library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B011CA2185A003C7FFC /* Library.framework */; };
-		46524B061CA2185A003C7FFC /* QuadratTouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B021CA2185A003C7FFC /* QuadratTouch.framework */; };
-		46524B071CA2185A003C7FFC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B031CA2185A003C7FFC /* RxCocoa.framework */; };
-		46524B081CA2185A003C7FFC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B041CA2185A003C7FFC /* RxSwift.framework */; };
 		46524B121CA21A28003C7FFC /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B101CA21A28003C7FFC /* Crashlytics.framework */; };
 		46524B131CA21A28003C7FFC /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B111CA21A28003C7FFC /* Fabric.framework */; };
 		46524B171CA21AA0003C7FFC /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46524B161CA21AA0003C7FFC /* Storyboards.swift */; };
-		46524B1F1CA22254003C7FFC /* PermissionScope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46524B1E1CA22254003C7FFC /* PermissionScope.framework */; };
+		4678A6CA1DA9ADAD0009AAA1 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4678A6C91DA9ADAD0009AAA1 /* AppState.swift */; };
+		4678A6CE1DA9AEC90009AAA1 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4678A6CD1DA9AEC90009AAA1 /* AppController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,13 +27,11 @@
 		46524AE21CA213FD003C7FFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46524AE41CA213FD003C7FFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46524B011CA2185A003C7FFC /* Library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Library.framework; path = Carthage/Build/iOS/Library.framework; sourceTree = "<group>"; };
-		46524B021CA2185A003C7FFC /* QuadratTouch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuadratTouch.framework; path = Carthage/Build/iOS/QuadratTouch.framework; sourceTree = "<group>"; };
-		46524B031CA2185A003C7FFC /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
-		46524B041CA2185A003C7FFC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		46524B101CA21A28003C7FFC /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = Frameworks/Crashlytics.framework; sourceTree = "<group>"; };
 		46524B111CA21A28003C7FFC /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = Frameworks/Fabric.framework; sourceTree = "<group>"; };
 		46524B161CA21AA0003C7FFC /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
-		46524B1E1CA22254003C7FFC /* PermissionScope.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PermissionScope.framework; path = Carthage/Build/iOS/PermissionScope.framework; sourceTree = "<group>"; };
+		4678A6C91DA9ADAD0009AAA1 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		4678A6CD1DA9AEC90009AAA1 /* AppController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,12 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46524B081CA2185A003C7FFC /* RxSwift.framework in Frameworks */,
 				46524B121CA21A28003C7FFC /* Crashlytics.framework in Frameworks */,
-				46524B1F1CA22254003C7FFC /* PermissionScope.framework in Frameworks */,
-				46524B071CA2185A003C7FFC /* RxCocoa.framework in Frameworks */,
 				46524B051CA2185A003C7FFC /* Library.framework in Frameworks */,
-				46524B061CA2185A003C7FFC /* QuadratTouch.framework in Frameworks */,
 				46524B131CA21A28003C7FFC /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,7 +68,9 @@
 		46524AD71CA213FD003C7FFC /* wifi near me */ = {
 			isa = PBXGroup;
 			children = (
+				4678A6C91DA9ADAD0009AAA1 /* AppState.swift */,
 				46524AD81CA213FD003C7FFC /* AppDelegate.swift */,
+				4678A6CD1DA9AEC90009AAA1 /* AppController.swift */,
 				46524ADC1CA213FD003C7FFC /* Main.storyboard */,
 				46524B0F1CA219EE003C7FFC /* Supporting Files */,
 			);
@@ -88,11 +82,7 @@
 			children = (
 				46524B101CA21A28003C7FFC /* Crashlytics.framework */,
 				46524B111CA21A28003C7FFC /* Fabric.framework */,
-				46524B1E1CA22254003C7FFC /* PermissionScope.framework */,
 				46524B011CA2185A003C7FFC /* Library.framework */,
-				46524B021CA2185A003C7FFC /* QuadratTouch.framework */,
-				46524B031CA2185A003C7FFC /* RxCocoa.framework */,
-				46524B041CA2185A003C7FFC /* RxSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -254,8 +244,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4678A6CA1DA9ADAD0009AAA1 /* AppState.swift in Sources */,
 				46524B171CA21AA0003C7FFC /* Storyboards.swift in Sources */,
 				46524AD91CA213FD003C7FFC /* AppDelegate.swift in Sources */,
+				4678A6CE1DA9AEC90009AAA1 /* AppController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

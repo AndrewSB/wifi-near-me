@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Onboarding View Controller-->
+        <!--View Controller-->
         <scene sceneID="jTq-bM-KSU">
             <objects>
-                <viewController storyboardIdentifier="onboarding" id="xVd-f6-DKP" customClass="OnboardingViewController" customModule="wifi_near_me" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="onboarding" id="xVd-f6-DKP" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Pjk-1e-j24"/>
                         <viewControllerLayoutGuide type="bottom" id="58i-Oo-ggh"/>
@@ -34,49 +34,11 @@
                     </view>
                     <connections>
                         <outlet property="bigTextLabel" destination="zmB-y1-86T" id="a06-Hn-cvk"/>
-                        <segue destination="VSe-0Q-NKz" kind="presentation" identifier="toAuthorized" id="WGz-Ns-FTe"/>
-                        <segue destination="Ttr-Kr-lVK" kind="presentation" identifier="toDenied" id="CzT-S6-E3U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oc5-sd-Wc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-784" y="-177"/>
-        </scene>
-        <!--Authorized View Controller-->
-        <scene sceneID="OE6-Dq-8Gj">
-            <objects>
-                <viewController storyboardIdentifier="authorized" id="VSe-0Q-NKz" customClass="AuthorizedViewController" customModule="wifi_near_me" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3xw-FR-xaa"/>
-                        <viewControllerLayoutGuide type="bottom" id="ecO-Bo-hXo"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cQw-qE-Mf2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="UOZ-La-AsE" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="352" y="-537"/>
-        </scene>
-        <!--Denied View Controller-->
-        <scene sceneID="WaG-t8-wjz">
-            <objects>
-                <viewController storyboardIdentifier="denied" id="Ttr-Kr-lVK" customClass="DeniedViewController" customModule="wifi_near_me" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ukC-hu-GbL"/>
-                        <viewControllerLayoutGuide type="bottom" id="jFw-By-m7V"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RpO-7S-DeG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oaF-QD-hm4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="353" y="333"/>
         </scene>
     </scenes>
 </document>

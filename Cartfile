@@ -4,3 +4,4 @@ github "ReactiveX/RxSwift" "3.0.0-beta.1"
 github "Constantine-Fry/das-quadrat" "develop"
 
 github "sunshinejr/RxPermission" "master"
+github "inamiy/RxAutomaton" "swift/3.0"
